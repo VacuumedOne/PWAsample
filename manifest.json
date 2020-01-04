@@ -1,0 +1,10 @@
+{
+  "name": "PWA sample",
+  "short_name": "PWA",
+  "background_color": "fc980c",
+  "icons": {
+    "192": "icon-192.png"
+  },
+  "start_url": "./?hoge=fuga",
+  "display": "standalone"
+}

@@ -1,8 +1,24 @@
 <html>
   <head>
     <title>PWA Test</title>
+    <link rel="maniefst" href="manifest.json">
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./service-worker.js").then(() => {
+          console.log("Service Worker Registered.")
+        })
+      }
+    </script>
+    <style>
+      body {
+        text-align: center;
+        vertical-align: middle;
+      }
+
+    </style>
   </head>
   <body>
     <h1>Hello, PWA!</h1>
+    <a href="next.html">次へ</a>
   </body>
 </html>
